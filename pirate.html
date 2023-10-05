@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html> <head>
+    <title>
+        Named-New-Title  
+    </title> <style>
+        
+        .body {
+            background-color: #830cec;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    .h1 {
+            font-size: 36px;
+        }
+
+        .p {
+            font-size: 18px;
+        }
+
+        #locations  {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #06e87a;
+        }
+        #penalty{
+            font-size: 16px;
+            margin-top: 10px;
+            color: #ec0c0c;
+        }
+
+        #help {
+            font-size: 20px;
+            margin-top: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .game-field {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0px;
+            margin-top: 3px;
+        }
+
+         
+        .game-image {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+        }
+      
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: red;
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+</style>
+</head>
+<body>
+    
+    <h1>Find the treasure by Nalluri varashitha</h1>
+        <p>Click on the locations to search for treasure, beware the traps</p>
+        <p id="locations">Number of locations checked is zero.</p>
+        <p id="penalty">Penalty is zero.</p>
+        <p>Click for help.</p>
+        <p id="help">Help report</p>
+        <div class="game-field">
+            <!-- Row 1 -->
+            <div class="game-location">
+                <img class="game-image" src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="game-field">
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="game-field">
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="game-field">
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="game-field">
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+            <div class="game-location">
+                <img class="game-image"  src="location.jpg" alt="location image">
+            </div>
+        </div>
+    </div>
+
+        
+</body>
+</html>
