@@ -14,8 +14,8 @@
   <h3> Nalluri Varshitha speed check</h3>
   <div id="target">Your time </div>
   <div id="counter">Count </div>
-  <button >Start Timer</button>
-  <button type="button" onclick="recordTime()" class="btn btn-secondary">React</button>
+  <button type="button"  onclick="startTime()">Start Timer</button>
+  <button type="button" onclick="recordTime()" >React</button>
 
 
   
@@ -24,15 +24,35 @@
   <script>
   var reactTime = undefined;
 
-function recordTime() {
+   function recordTime() {
   reactTime = Date.now();
   console.log("reactTime:", reactTime);
 }
+function startTime() {
+            for (let i = 0; i < 9; i++) {
+                setTimeout(function(i) {
+                    return function() {
+                        document.getElementById("counter").innerHTML = i;
+                    };
+                }(i), (8 - i) * 1000);
+            }
+            
+setTimeout(function() {
+    if ( reactTime === undefined) {
+       document.getElementById("target").innerHTML = "Too Slow";
+    } else {
+       let endTime = Date.now();
+       
+        document.getElementById("target").innerHTML = "Time was " + (endTime-reactTime) ;
+    }
+}, 8000);
 
-  
- 
-  
-  </script>
+
+
+
+}
+
+ </script>
 
 </body>
 </html>
