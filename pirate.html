@@ -179,10 +179,8 @@
        <button type="button" class="btn btn-danger" onclick="bonus()">Random value</button>
        <script>
            
-           var ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"];
-   
-   
-           var checkCount = 0;
+    var ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"];
+    var checkCount = 0;
            var penalty = 0;
            var lastCheck = 0;
            var treasureLocation = 5;
@@ -244,12 +242,7 @@
             document.getElementById('penalty').innerHTML = "penalty is "+ penalty
 
         }
-
-
-
-   
-   
-       function bonus() {
+ function bonus() {
     checkCount = 0;
     penalty = 0;
     gameOver = false;
@@ -269,10 +262,7 @@
         var imageElement = document.getElementById(ids[i]);
         imageElement.src = "location.jpg";
     }
-}
-
-   
-       
-       </script>
+}   
+      </script>
    </body>
    </html>
