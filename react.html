@@ -29,12 +29,13 @@
   console.log("reactTime:", reactTime);
 }
 function startTime() {
-            for (let i = 0; i < 9; i++) {
+    var starting = Math.floor(Math.random() * 9) + 2;
+            for (let i = starting; i >= 0; i--) {
                 setTimeout(function(i) {
                     return function() {
                         document.getElementById("counter").innerHTML = i;
                     };
-                }(i), (8 - i) * 1000);
+                }(i), (starting - i) * 1000);
             }
             
 setTimeout(function() {
@@ -45,7 +46,7 @@ setTimeout(function() {
        
         document.getElementById("target").innerHTML = "Time was " + (endTime-reactTime) ;
     }
-}, 8000);
+}, starting*1000);
 
 
 

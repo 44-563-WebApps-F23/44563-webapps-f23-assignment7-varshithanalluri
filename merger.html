@@ -47,6 +47,7 @@
         <button onclick="makeNewDiv()">Add end</button>
         <button type="button" onclick="addFront()">Add front</button>
 		<button type="button" onclick="remove()">Remove</button>
+        <button type="button" onclick="swap()">Swap</button>
 	
 </body>
 <script>
@@ -77,6 +78,19 @@ function addFront(){
     let container = document.getElementById("target");
     container.insertBefore(element, container.firstChild);
 } 
+function swap() {
+			let mergerItems = document.getElementsByClassName("merger")
+			let x = Math.floor(Math.random() * mergerItems.length)
+			let y = Math.floor(Math.random() * mergerItems.length)
+			 let intialText = document.getElementsByClassName("merger")[x]
+			 let finalText = document.getElementsByClassName("merger")[y]
+			if (mergerItems.length > 1) {
+				let you = intialText.innerHTML
+				intialText.innerHTML = finalText.innerHTML
+			 	finalText.innerHTML = you
+			}
+		
+		}
 
 </script>
 </html>	
