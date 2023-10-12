@@ -39,18 +39,15 @@ function startTime() {
             }
             
 setTimeout(function() {
-    if ( reactTime === undefined) {
-       document.getElementById("target").innerHTML = "Too Slow";
-    } else {
-       let endTime = Date.now();
-       
-        document.getElementById("target").innerHTML = "Time was " + (endTime-reactTime) ;
-    }
-}, starting*1000);
+    if(reactTime === undefined){
+          document.getElementById('target').innerHTML = "Too Slow"
+      }else
+      {
+          var endTime = Date.now()
+          document.getElementById('target').innerHTML = "Time was " + Math.abs(parseInt(reactTime - endTime))
 
-
-
-
+      }
+  }, starting*1000);
 }
 
  </script>
